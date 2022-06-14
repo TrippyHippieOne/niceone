@@ -1,0 +1,165 @@
+
+@font-face {
+    font-family: Tungsten;
+    src: url('../Font/TungstenCond-Book.otf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: Tungsten;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 150px;
+    background: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px !important;
+    letter-spacing: .07rem;
+    width: 100%;
+
+}
+
+.buttonColors {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.app__main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.blockone {
+    display: flex;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    font-family: Tungsten;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    
+}
+
+.blocktext {
+    font-family: Tungsten;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.full-screen {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px;
+
+}
+.fullscreen__body {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+.fullscreen__title {
+    font-family: Tungsten;
+    font-size: 80px;
+    letter-spacing: 25px;
+    font-weight: 700;
+    margin: 0px 0px 25px 0px;
+}
+.fullscreen__text {
+    font-family: Tungsten;
+    font-size: 45px;
+    letter-spacing: 15px;
+    font-weight: 700;
+
+}
+.fullscreen__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+
+}
+.about {
+    background-color: red;   
+    max-width: 100%;
+    padding-right: 25px;
+
+
+
+  
+}
+.about__text {
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    font-family: Tungsten;
+    font-size: 45;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-left: 15px;
+    
+    padding: 0px 15px;
+    line-height: 1; 
+
+}
+.big__text {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    background-color: red;
+    font-family: Tungsten;
+    font-size: 90px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 0px 15px;
+    line-height: 150%; 
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    width: 10px;
+    height: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.github a:hover {background: #191919; color: #fff;}
+.youtube a:hover {background: #c4302b; color: #fff;}
+.google-pluse a:hover {background: #DD4B39; color: #fff;}
+.twitter a:hover {background: #00acee; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.facebook a:hover {background: #3b5998; color: #fff;}
+.skype a:hover {background: #00aff0; color: #fff;}
+.odnoklassniki a:hover {background: #f93; color: #fff;}
+.pinterest a:hover {background: #c8232c; color: #fff;}
+.linkedin a:hover {background: #0e76a8; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.tumblr a:hover {background: #34526f; color: #fff;}
+.windows a:hover {background: #125acd; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+.weibo a:hover {background: #d52b2b; color: #fff;}
+.dropbox a:hover {background: #1087dd; color: #fff;}
