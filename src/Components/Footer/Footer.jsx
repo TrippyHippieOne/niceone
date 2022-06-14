@@ -1,15 +1,15 @@
-import { BottomNavigation, BottomNavigationAction } from "@mui/material";
-import React, { useState } from "react";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import "./Footer.css"
-import { Navigate } from "react-router-dom";
+import { BottomNavigation, BottomNavigationAction } from "@mui/material";
+import { useState } from "react";
+import "./Footer.css";
 
 const Footer = () => {
     const [value, setValue] = useState(0);
     const handleChange = (event, newValue) => {
-        setValue(newValue);
+        setValue(0)
+        ;
     };
 
 
