@@ -11,21 +11,6 @@
     box-sizing: border-box;
 }
 
-.navbar {
-    font-family: Tungsten;
-    height: 90px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 150px;
-    background: rgb(0, 0, 0);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 35px !important;
-    letter-spacing: .07rem;
-    width: 100%;
-
-}
 
 .buttonColors {
     color: aliceblue;
@@ -35,7 +20,7 @@
 .app__main-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
 }
 
 .blockone {
@@ -47,6 +32,7 @@
     font-size: 40px;
     color: white;
     background-color: black;
+    top: 90px;
     
 }
 
@@ -73,6 +59,7 @@
     align-items: center;
     flex-direction: column;
     text-transform: uppercase;
+    margin-top: 90px;
 
 }
 .fullscreen__title {
@@ -102,7 +89,9 @@
 .about {
     background-color: red;   
     max-width: 100%;
+    height: 2500px;
     padding-right: 25px;
+    margin-top: 90px;
 
 
 
@@ -110,21 +99,20 @@
 }
 .about__text {
     width: 100%;
-    height: 600px;
+    height: 900px;
     background-color: red;
     font-family: Tungsten;
     font-size: 45;
     letter-spacing: 2px;
     font-weight: 700;
     margin-left: 15px;
-    
     padding: 0px 15px;
     line-height: 1; 
 
 }
 .big__text {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     display: flex;
     background-color: red;
     font-family: Tungsten;
@@ -136,6 +124,11 @@
     align-items: center;
     text-decoration: none;
     color: black;
+    margin-top: 90px;
+}
+
+.music {
+    margin-top: 90px;
 }
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -145,6 +138,32 @@
     text-decoration: none;
     color: #000;
 }
+@media (min-width: 400px) {
+    .about {
+        height: 2000px;
+    }
+} 
+
+@media (min-width: 450px) {
+    .about {
+        height: 1700px;
+    }
+} 
+
+@media (min-width: 600px) {
+    .about {
+        height: 1500px;
+    }
+}
+
+@media (min-width: 790px) {
+    .about {
+        height: 1200px;
+    }
+}
+
+
+
 
 
 .github a:hover {background: #191919; color: #fff;}
