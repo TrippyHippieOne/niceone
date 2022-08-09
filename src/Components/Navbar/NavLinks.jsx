@@ -1,49 +1,74 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { CgMenuRound } from "react-icons/cg";
-import { CgCloseO } from "react-icons/cg";
-import { useState } from "react";
+import { motion } from "framer-motion";
 
-const NavLinks = () => {
-    const navigate = useNavigate();
-    const goHome = () => navigate("/home");
-    const [open, setOpen] = useState(false);
+const NavLinks = (props) => {
+    const animateFrom = { opacity: 0, y: -40 };
+    const animateTo = { opacity: 1, y: 0 };
 
     return (
         <ul>
-            {/* <img
-                className="img"
-                src={process.env.PUBLIC_URL + "/logo.png"}
-                alt="qweqwe"
-                onClick={goHome}
-            /> */}
-            <li>
-                <a href="/home">
+            <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.05 }}
+            >
+                <Link
+                    to="/home"
+                    onClick={() => props.CloseMobileMenu()}
+                >
                     HOME
-                </a>
-            </li>
-            <li>
-                <a href="/party">
+                </Link>
+            </motion.li>
+            <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.1 }}
+            >
+                <Link
+                    to="/party"
+                    onClick={() =>  props.CloseMobileMenu()}
+                >
                     PARTY
-                </a>
-            </li>
-            <li>
-                <a href="/about">
+                </Link>
+            </motion.li>
+            <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.2 }}
+            >
+                <Link
+                    to="/about"
+                    onClick={() => props.CloseMobileMenu()}
+                >
                     About
-                </a>
-            </li>
-            <li>
-                <a href="/music">
+                </Link>
+            </motion.li>
+            <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.3 }}
+            >
+                <Link
+                    to="/music"
+                    onClick={() =>  props.CloseMobileMenu()}
+                >
                     MUSIC
-                </a>
-            </li>
-            <li>
-                <a href="/contacts">
+                </Link>
+            </motion.li>
+            <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.4 }}
+            >
+                <Link
+                    to="/contacts"
+                    onClick={() =>  props.CloseMobileMenu()}
+                >
                     Contact
-                </a>
-            </li>
+                </Link>
+            </motion.li>
         </ul>
     );
 };

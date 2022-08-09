@@ -7,11 +7,11 @@ import "./Styles/App.css";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Navbar />
             <AppRouter />
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
