@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Tungsten;
-    src: url('../Font/TungstenCond-Book.otf');
+    src: url('./Font/TungstenCond-Book.otf');
 }
 
 
@@ -124,7 +124,19 @@
     align-items: center;
     text-decoration: none;
     color: black;
+    
+}
+
+.party-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    font-family: Tungsten;
+    font-size: 90px;
     margin-top: 90px;
+
 }
 
 .music {
@@ -158,7 +170,7 @@
 
 @media (min-width: 790px) {
     .about {
-        height: 1200px;
+        height: 1300px;
     }
 }
 
